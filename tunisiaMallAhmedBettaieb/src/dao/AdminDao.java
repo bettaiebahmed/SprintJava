@@ -5,7 +5,7 @@
  */
 package dao;
 
-import GUI.*;
+import gui.*;
 import Idao.AdminIdao;
 import com.sun.corba.se.spi.orbutil.threadpool.Work;
 import entite.*;

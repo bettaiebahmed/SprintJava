@@ -32,18 +32,21 @@ public class JFrameAuthentification extends javax.swing.JFrame {
     /**
      * Creates new form JFrameAuthentification
      */
-    private static final String VOICENAME = "kevin16";
+    //private static final String VOICENAME = "kevin16";
 
     public JFrameAuthentification() {
         initComponents();
-        Voice voice;
-        VoiceManager vm = VoiceManager.getInstance();
-        voice = vm.getVoice(VOICENAME);
-        voice.allocate();
-        try {
-            voice.speak("Welcome to TunisiaMall");
-        } catch (Exception e) {
-        }
+//        Voice voice;
+//        VoiceManager vm = VoiceManager.getInstance();
+//        voice = vm.getVoice(VOICENAME);
+//        voice.allocate();
+//        try {
+//            voice.speak("Welcome to TunisiaMall");
+//        } catch (Exception e) {
+//        }
+        String ch = "Welcome to TunisiaMall";
+        Speak welcome = new Speak();
+        welcome.talk(ch);
         Enregistrement.setVisible(false);
         this.setDefaultCloseOperation(JFrameAuthentification.EXIT_ON_CLOSE);
         this.setSize(500, 500);
@@ -63,6 +66,7 @@ public class JFrameAuthentification extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jDialog1 = new javax.swing.JDialog();
+        list1 = java.beans.Beans.isDesignTime() ? java.util.Collections.emptyList() : ((javax.persistence.Query)null).getResultList();
         Enregistrement = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();

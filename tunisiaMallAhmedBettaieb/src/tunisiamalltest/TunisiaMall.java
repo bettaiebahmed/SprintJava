@@ -5,8 +5,7 @@
  */
 package tunisiamalltest;
 
-import GUI.JFrameAdmin;
-import GUI.JFrameAuthentification;
+import gui.*;
 import dao.*;
 import entite.*;
 import java.awt.EventQueue;
